@@ -116,7 +116,7 @@ mod test {
     fn test_list_reports() {
         let params_json = r#"
             {
-                "epi_isolation.GlobalParams": {
+                "congregate_measles.GlobalParams": {
                     "max_time": 200.0,
                     "seed": 123,
                     "infectiousness_rate_fn": {"Constant": {"rate": 1.0, "duration": 5.0}},
