@@ -1,15 +1,17 @@
-# Ixa epi isolation
+# Ixa-congregate-settings-measles
 
 ## Overview
 
-This project presents a general transmission model developed in [ixa](https://github.com/CDCgov/ixa), the Center for Forecasting and Outbreak Analytics' agent-based modeling framework. The transmission model goal is to possess time-varying infectioussness, immunity, interventions, and multiple co-circulating pathogens.
+This project is a fork of [ixa-epi-isolation](https://github.com/CDCgov/ixa-epi-isolation), which presents a general transmission model developed in [ixa](https://github.com/CDCgov/ixa), the Center for Forecasting and Outbreak Analytics' agent-based modeling framework. The goal of the original project was to model time-varying infectioussness, immunity, interventions, and multiple co-circulating pathogens.
+
+The adaptation in this project additionally explores the case of modeling measles transmission in a congregate setting where people (agents) may have heterogeneous contact patterns based on a person property they possess. Interventions in this project will also include interventions that change contact patterns for people that result in reduced contact with others (isolation, quarantine), alongside changes in who they contact (quarantining in shared rooms with other exposed people, cohorting to reduce unique contacts, etc).
 
 ## How to run the model
-As of 11/29/24, `cargo run -- -c ./input/input.json -o ./output`. There is an optional `-f` or `--force-overwrite` flag that can be
+As of 10/28/25, `cargo run -- -c ./input/input.json -o ./output`. There is an optional `-f` or `--force-overwrite` flag that can be
 passed to force overwriting of reports while in development/testing modes.
 
 ### Base example
-To recreate the `input/people_test.csv` population file used in the base example `input/input.json`, run `Rscript scripts/create_synthetic_population.R`, seeting the write variables to
+To recreate the `input/people_test.csv` population file used in the base example `input/input.json`, run `Rscript scripts/create_synthetic_population.R`, setting the write variables to
 
 ```R
 state_synth <- "WY"
@@ -21,7 +23,7 @@ work_per_pop_ratio <- 0.1
 
 ## Project Admin
 
-William Koval (CDC/IOD/ORR/CFA), Chirag Kumar (CDC/IOD/ORR/CFA), and Guido Camargo España (CDC/IOD/ORR/CFA)
+Dina Mistry (CDC/IOD/ORR/CFA), Kate Hudson (CDC/IOD/ORR/CFA), and Paige Miller (CDC/IOD/ORR/CFA)
 
 ## General Disclaimer
 This repository was created for use by CDC programs to collaborate on public health related projects in support of the [CDC mission](https://www.cdc.gov/about/organization/mission.htm).  GitHub is not hosted by the CDC, but is a third party website used by CDC and its partners to share information and collaborate on software. CDC use of GitHub does not imply an endorsement of any one particular service, product, or enterprise.
