@@ -7,6 +7,6 @@ experiment_conditions:
   replicates_per_particle: 30
   samples_per_step: 1
   seed: 1234
-  scenario_key: epi_isolation.GlobalParams
+  scenario_key: congregate_measles.GlobalParams
 azb:
   azure_batch: false

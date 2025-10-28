@@ -25,7 +25,7 @@ use crate::profiling::{print_profiling_data, ProfilingContextExt};
 // You must run this with a parameters file:
 // cargo run -- --config input/input.json
 // Try enabling logs to see some output about infections:
-// cargo run -- --config input/input.json --log-level epi_isolation=Trace -f
+// cargo run -- --config input/input.json --log-level congregate_measles=Trace -f
 fn main() {
     let mut context = run_with_args(|context, _, _| {
         // Read the global properties.
