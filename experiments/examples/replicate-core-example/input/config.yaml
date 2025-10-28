@@ -1,6 +1,6 @@
 local_path:
   default_params_file: input/input.json
-  exe_file: target/release/epi-isolation
+  exe_file: target/release/congregate_measles
   sub_experiment_name: replicate-core-example
   super_experiment_name: examples
 experiment_conditions:
