@@ -8,3 +8,6 @@ pub use constant_rate::ConstantRate;
 
 pub mod empirical_rate;
 pub use empirical_rate::EmpiricalRate;
+
+pub mod gamma_rate;
+pub use gamma_rate::GammaRate;
