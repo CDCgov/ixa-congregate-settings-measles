@@ -19,6 +19,7 @@ polars = "^1.6.0"
 jupyter = "^1.1.1"
 cfa-azure = {git = "https://github.com/CDCgov/cfa_azure.git"}
 networkx = "^3.5"
+ipykernel = "^7.1.0"
 
 [build-system]
 requires = ["poetry-core"]
